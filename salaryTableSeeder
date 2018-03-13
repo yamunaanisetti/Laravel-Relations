@@ -1,0 +1,70 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class salaryTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('salaries')->insert([
+            'Employee_id' => 1,
+            'salary' => 10000,
+            'dept_name' => 'Accounts',
+        ]);
+         DB::table('salaries')->insert([
+            'Employee_id' => 2,
+            'salary' => 7000,
+            'dept_name' => 'Administration',
+        ]);
+          DB::table('salaries')->insert([
+           'Employee_id' => 3,
+            'salary' => 5000,
+            'dept_name' => 'HR Department',
+        ]);
+           DB::table('salaries')->insert([
+            'Employee_id' => 4,
+            'salary' => 20000,
+            'dept_name' => 'Sales',
+        ]);
+            DB::table('salaries')->insert([
+           'Employee_id' => 5,
+            'salary' => 9000,
+            'dept_name' => 'Finance',
+        ]); 
+            DB::table('salaries')->insert([
+           'Employee_id' => 6,
+            'salary' => 19000,
+            'dept_name' => 'Accounts',
+        ]);
+             DB::table('salaries')->insert([
+           'Employee_id' => 7,
+            'salary' => 7500,
+            'dept_name' => 'HR Department',
+        ]);
+              DB::table('salaries')->insert([
+           'Employee_id' => 8,
+            'salary' => 11000,
+            'dept_name' => 'Finance',
+        ]);
+               DB::table('salaries')->insert([
+           'Employee_id' => 9,
+            'salary' => 21000,
+            'dept_name' => 'Administration',
+        ]);
+                DB::table('salaries')->insert([
+           'Employee_id' => 10,
+            'salary' => 30000,
+            'dept_name' => 'Sales',
+        ]);
+                 DB::table('salaries')->insert([
+           'Employee_id' => 11,
+            'salary' => 35000,
+            'dept_name' => 'Finance',
+        ]);
+    }
+}
